@@ -1,11 +1,11 @@
-const products = [
+export const products = [
   {
     name: 'Callaway Paradym',
     price: 550,
     stars: 4,
     reviews: 250,
     seller: 'GolfShot',
-    image: 'url_callaway_paradym'
+    image: '/assets/Callaway-paradym.webp'
   },
   {
     name: 'Titleist Pro V1',
