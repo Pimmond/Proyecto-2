@@ -5,7 +5,7 @@ export const products = [
     stars: 4,
     reviews: 250,
     seller: 'GolfShot',
-    image: '/assets/Callaway-paradym.webp'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'Titleist Pro V1',
@@ -13,7 +13,7 @@ export const products = [
     stars: 5,
     reviews: 300,
     seller: 'GolfGalaxy',
-    image: 'url_titleist_pro_v1'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'TaylorMade SIM Max',
@@ -21,7 +21,7 @@ export const products = [
     stars: 4.5,
     reviews: 200,
     seller: 'PGA Tour Superstore',
-    image: 'url_taylormade_sim_max'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'Ping G410 Driver',
@@ -29,7 +29,7 @@ export const products = [
     stars: 4.7,
     reviews: 180,
     seller: 'GolfDiscount',
-    image: 'url_ping_g410_driver'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'Cobra King F9 Irons',
@@ -37,7 +37,7 @@ export const products = [
     stars: 4.3,
     reviews: 150,
     seller: 'GlobalGolf',
-    image: 'url_cobra_king_f9_irons'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'Mizuno JPX919 Wedge',
@@ -45,7 +45,7 @@ export const products = [
     stars: 4.8,
     reviews: 220,
     seller: 'RockBottomGolf',
-    image: 'url_mizuno_jpx919_wedge'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'Odyssey Stroke Lab Putter',
@@ -53,7 +53,7 @@ export const products = [
     stars: 4.6,
     reviews: 170,
     seller: "Dick's Sporting Goods",
-    image: 'url_odyssey_stroke_lab_putter'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'Srixon Soft Feel Golf Balls',
@@ -61,7 +61,7 @@ export const products = [
     stars: 4.9,
     reviews: 280,
     seller: 'Amazon',
-    image: 'url_srixon_soft_feel_golf_balls'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'Nike Vapor Fly Pro Hybrid',
@@ -69,7 +69,7 @@ export const products = [
     stars: 4.4,
     reviews: 190,
     seller: 'Golfsmith',
-    image: 'url_nike_vapor_fly_pro_hybrid'
+    image: '/assets/generic-golf-club.png'
   },
   {
     name: 'Titleist Scotty Cameron',
@@ -77,6 +77,6 @@ export const products = [
     stars: 4.2,
     reviews: 120,
     seller: 'Vice Pro Shop',
-    image: 'url_titleist_scotty_cameron'
+    image: '/assets/generic-golf-club.png'
   }
 ]
