@@ -8,7 +8,7 @@ const listProducts = (productList, seller, price) => {
     if (
       product.seller === seller ||
       seller === 'Any seller' ||
-      seller == null
+      product.price < price
     ) {
       let productHTML = `
     <div class="product">
@@ -16,17 +16,17 @@ const listProducts = (productList, seller, price) => {
         <div>
           <img src="${product.image}"/>
         </div>
-        <p>${product.price}</p>
-        <p>${product.stars}</p>
-        <p>${product.reviews}</p>
-        <p>${product.seller}</p>
+        <p>Precio: ${product.price}</p>
+        <p>Valoración: ${product.stars}</p>
+        <p>Número de comentarios: ${product.reviews}</p>
+        <p>Vendedor: ${product.seller}</p>
     </div>
 `
       divProducts.innerHTML += productHTML
     }
   })
 }
-listProducts(products)
+listProducts(products, 'Any seller')
 
 //Función para pintar las opciones en el filtro select
 let selectFilter = document.createElement('select')
@@ -56,11 +56,28 @@ selectFilter.addEventListener('change', (event) => {
   listProducts(products, selectedSeller)
 })
 
-//Función para pintar el input y botón de filtro de precio
+//Función para pintar el input de precio
 let priceInput = document.createElement('input')
-let priceFilterButton = document.createElement('button')
-priceInput.classList.add('filter')
-priceFilterButton.classList.add('filter')
-
 divFilter.appendChild(priceInput)
-divFilter.appendChild(priceFilterButton)
+priceInput.addEventListener('change', (event) => {
+  listProducts(products, null, priceInput.value)
+  console.log(priceInput.value)
+})
+
+//Función para crear botón de limpiar filtros
+
+const limpiarFiltros = () => {
+  let filterClearButton = document.createElement('button')
+  priceInput.classList.add('filter')
+  filterClearButton.classList.add('filter')
+  filterClearButton.textContent = 'Limpiar filtros'
+  divFilter.appendChild(filterClearButton)
+  //evento click limpiar filtros
+  filterClearButton.addEventListener('click', (event) => {
+    selectFilter.value = 'Any seller'
+    priceInput.value = ''
+    listProducts(products, 'Any seller')
+  })
+}
+
+limpiarFiltros()

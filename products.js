@@ -4,7 +4,7 @@ export const products = [
     price: 550,
     stars: 4,
     reviews: 250,
-    seller: 'GolfShot',
+    seller: 'GlobalGolf',
     image: '/assets/generic-golf-club.png'
   },
   {
@@ -28,7 +28,7 @@ export const products = [
     price: 400,
     stars: 4.7,
     reviews: 180,
-    seller: 'GolfDiscount',
+    seller: 'Vice Pro Shop',
     image: '/assets/generic-golf-club.png'
   },
   {
@@ -44,7 +44,7 @@ export const products = [
     price: 120,
     stars: 4.8,
     reviews: 220,
-    seller: 'RockBottomGolf',
+    seller: 'Vice Pro Shop',
     image: '/assets/generic-golf-club.png'
   },
   {
@@ -68,7 +68,7 @@ export const products = [
     price: 180,
     stars: 4.4,
     reviews: 190,
-    seller: 'Golfsmith',
+    seller: 'Amazon',
     image: '/assets/generic-golf-club.png'
   },
   {
