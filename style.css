@@ -1,7 +1,6 @@
 #app {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
 }
 #filters {
   height: 200px;
@@ -14,7 +13,31 @@
   width: 20vw;
 }
 
+#div-products {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .product {
   padding: 20px;
-  width: 80vw;
+  width: 20vw;
+}
+
+.product:hover {
+  background-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  #filters {
+    width: 100vw;
+  }
+  #div-products {
+    width: 100vw;
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+  }
 }

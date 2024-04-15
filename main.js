@@ -81,3 +81,10 @@ const limpiarFiltros = () => {
 }
 
 limpiarFiltros()
+
+function mostrarMensaje() {
+  alert(
+    '¡Hola! Esta no es la página más bonita, pero creo que cumple con los requisitos. ¡Así puedo seguir avanzando en el curso cuanto antes!'
+  )
+}
+mostrarMensaje()
